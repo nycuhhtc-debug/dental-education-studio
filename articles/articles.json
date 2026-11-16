@@ -13,7 +13,35 @@
       "醫學參考資料待醫師補充與查證"
     ],
     "review_status": "待醫師審核",
-    "updated": "2026-11-16"
+    "updated": "2026-11-16",
+    "cover": {
+      "src": "articles/images/wisdom-tooth-illustration.svg",
+      "alt": "放大鏡中的牙齒，搭配清潔與蛀牙、牙周與鄰牙、必要影像三項評估；不代表每顆智齒都必須拔除。",
+      "caption": "智齒不痛，也需要評估嗎？｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "8392bdb2dd2b62ee50bcbbc997343c1dda7ebc85fc69bcdef8e463eb6f78fa30",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/wisdom-tooth-guide.svg",
+        "alt": "先看清潔與蛀牙：不只看有沒有疼痛，由醫師檢查牙齒狀況；評估牙周與鄰牙：智齒位置及周圍狀況，都需納入個別評估；依醫師建議追蹤：有需要時安排影像評估，處置方式共同討論。概念示意，非個別診斷或操作教學。",
+        "caption": "智齒是否需要拔除？｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "6488c40639b97d678f92330bc5e62faf4c2cd4e4cc5758546c2e6b61e4f40edb",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "dental-implant",
@@ -29,7 +57,35 @@
       "醫學參考資料待醫師補充與查證"
     ],
     "review_status": "待醫師審核",
-    "updated": "2026-11-16"
+    "updated": "2026-11-16",
+    "cover": {
+      "src": "articles/images/dental-implant-illustration.svg",
+      "alt": "簡化的牙冠與螺紋植體概念圖，提醒植牙前評估骨量、牙周、健康、咬合與長期維護；非手術位置或比例教學。",
+      "caption": "植牙前，需要評估哪些事？｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "2d99d00b8e0dd9aa95fb5cc7e32d94bee192d442eda43c18bb34aae9df966167",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/dental-implant-guide.svg",
+        "alt": "骨量與牙周狀態：由醫師評估缺牙區狀況，必要時先處理牙周問題；健康狀況與咬合：告知醫師相關健康資訊，治療步驟依個別評估；清潔與定期回診：植牙後仍需日常清潔，持續追蹤周圍組織健康。概念示意，非個別診斷或操作教學。",
+        "caption": "植牙前的三項評估｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "eaddb95572919146fbcb940528f98667052e089c3977f36cd686f74bd96cce13",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "tmj-pain",
@@ -45,7 +101,35 @@
       "醫學參考資料待醫師補充與查證"
     ],
     "review_status": "待醫師審核",
-    "updated": "2026-11-16"
+    "updated": "2026-11-16",
+    "cover": {
+      "src": "articles/images/tmj-pain-illustration.svg",
+      "alt": "以簡化鉸鏈和肌肉符號表達關節與咀嚼肌，並非精確解剖圖；持續疼痛或張口受限時需專業評估，聲響不代表同一種疾病。",
+      "caption": "張口疼痛或有聲音，怎麼辦？｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "4b0cd19817992ff6cedea2523060f398248a314fbd1537c281ffd0f84c02f700",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/tmj-pain-guide.svg",
+        "alt": "症狀不一定同原因：疼痛與聲響可能涉及，咀嚼肌、關節或其他原因；留意影響生活的變化：持續疼痛或張口受限，咬合突然改變應就醫；依診斷選擇處理方式：不憑網路資訊自行診斷，由醫師評估治療選擇。概念示意，非個別診斷或操作教學。",
+        "caption": "張口不適，先評估原因｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "74f260a1a496b60521f37af1b13d0ae1218ea0f30f5d7eddfc6099e4199a6384",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "post-extraction-care",
@@ -62,7 +146,35 @@
       "醫學參考資料待醫師補充與查證"
     ],
     "review_status": "待醫師審核",
-    "updated": "2026-11-17"
+    "updated": "2026-11-17",
+    "cover": {
+      "src": "articles/images/post-extraction-care-illustration.svg",
+      "alt": "紗布、軟質餐與牙刷三個符號，說明拔牙後依指示止血、飲食及清潔；避免用力漱口、吸吮或吐口水，依醫囑回診。",
+      "caption": "拔牙後，保護傷口與血塊｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "1fb5bba34523b369a7c53ed783594d1332ec7a60d661b6bf024508ebc9a4fff8",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/post-extraction-care-guide.svg",
+        "alt": "保護傷口血塊：依醫囑咬紗布止血，避免用力漱口與吸吮；飲食與清潔都要顧：先選溫涼軟質食物，其他牙齒仍輕柔刷牙；留意出血與腫痛：持續大量出血或腫痛加劇，應儘快聯絡診所評估。概念示意，非個別診斷或操作教學。",
+        "caption": "拔牙後的居家照護｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "98cd6706228216f2d94d6767656790c7535a1aacb9931cc208a695afa7b65060",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "wisdom-tooth-wound-care",
@@ -81,7 +193,35 @@
       "醫學參考資料待醫師補充與查證"
     ],
     "review_status": "待醫師審核",
-    "updated": "2026-11-17"
+    "updated": "2026-11-17",
+    "cover": {
+      "src": "articles/images/wisdom-tooth-wound-care-illustration.svg",
+      "alt": "冰袋、餐碗與回診日曆三個符號，提醒拔智齒後冰敷需依醫囑、保護傷口及留意警訊，不提供固定冰敷時間或操作步驟。",
+      "caption": "拔智齒後，傷口怎麼照護？｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "b54c6d9c8046c0eba49a2febaf5924daf191ddcb59ccfad17c98a4f506cebfd8",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/wisdom-tooth-wound-care-guide.svg",
+        "alt": "腫痛處理依醫囑：冰敷方式及時間先確認，冰袋不直接接觸皮膚；不要碰觸或挖取傷口：不自行拉扯或拆除縫線，清潔傷口附近依醫囑；異常變化應聯絡診所：大量出血或腫痛加劇，呼吸或吞嚥困難立即就醫。概念示意，非個別診斷或操作教學。",
+        "caption": "拔智齒後的照護提醒｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "e18101e2c3452733b18deadb00cb435ba2a54563188d9ea2057c09d0c604c394",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "implant-postoperative-care",
@@ -100,7 +240,35 @@
       "醫學參考資料待醫師補充與查證"
     ],
     "review_status": "醫師已審核",
-    "updated": "2026-11-17"
+    "updated": "2026-11-17",
+    "cover": {
+      "src": "articles/images/implant-postoperative-care-illustration.svg",
+      "alt": "牙刷、軟質餐與回診日曆符號，提醒植牙後依醫囑清潔、避免食物或假牙壓迫傷口、不自行測試植體穩固，按時回診。",
+      "caption": "植牙手術後，照護要點｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "ef84cca75e15db8eae17ee2194ce69782cb2edfd1fc648ff7b879e4ed80137c7",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/implant-postoperative-care-guide.svg",
+        "alt": "避免傷口受刺激：飲食先選溫涼軟質，避免手術側咀嚼與壓迫；清潔與用藥依醫囑：不拉扯縫線或測試穩固，藥物不自行加量或停用；按時回診，留意警訊：發燒、膿液或腫痛加劇，請立即聯絡診所回診。概念示意，非個別診斷或操作教學。",
+        "caption": "植牙手術後的照護｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "17b35c7834d437c363c9a2f7c1825dfc298f2aa0761b7181abb1e2d3915b9135",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "lllt-evidence",
@@ -120,7 +288,35 @@
       "其他牙科用途的系統性回顧與最新醫學參考資料待醫師補充與查證"
     ],
     "review_status": "醫師已審核",
-    "updated": "2026-11-17"
+    "updated": "2026-11-17",
+    "cover": {
+      "src": "articles/images/lllt-evidence-illustration.svg",
+      "alt": "未對著病人的光源概念圖；區分特定癌症療程相關口腔黏膜炎預防的指引支持，以及其他牙科用途需分別評估的證據，非照射部位或操作示範。",
+      "caption": "低能量雷射，實證看用途｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "68339fe2ccca3f5472c02245605ef52aa95cb24798fe44e431db927aa44c6f7a",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    },
+    "images": [
+      {
+        "src": "articles/images/lllt-evidence-guide.svg",
+        "alt": "特定用途有指引支持：部分癌症療程相關的，口腔黏膜炎預防；治療條件不能省略：適用族群與照射療程，應由治療團隊核對；其他用途分別評估：不能套用至所有牙科問題，不把短期結果當長期保證。概念示意，非個別診斷或操作教學。",
+        "caption": "低能量雷射的證據界線｜實際處置依醫師個別評估。",
+        "width": 640,
+        "height": 1000,
+        "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+        "license": "本專案原創，供 Dental Education Studio 使用。",
+        "sha256": "253b4e41fb14f69ce99079088a841a315c5bbae8bf57a6850331d5fb40f22012",
+        "review_status": "待醫師審核",
+        "reviewed_by": null,
+        "reviewed_on": null
+      }
+    ]
   },
   {
     "id": "jaw-fracture-imf-diet",
@@ -156,6 +352,19 @@
         "reviewed_by": "專案負責人（本次 Codex 對話）",
         "sha256": "bc00c2e8dad47529e9b0167d24a1990f042cc185aa2f5e42846ee4773ca2279d"
       }
-    ]
+    ],
+    "cover": {
+      "src": "articles/images/jaw-fracture-imf-diet-illustration.svg",
+      "alt": "飲食、回診及檢查符號，提醒顎骨骨折後依固定方式、穩定性、咬合與醫師評估選擇飲食；不以週數或能否張口決定正常咀嚼。",
+      "caption": "顎骨骨折後，飲食如何進階？｜概念示意，實際照護依醫師指示。",
+      "width": 960,
+      "height": 600,
+      "source": "本專案 AI 輔助繪製的原創 SVG 概念示意圖；文字依本篇既有衛教內容整理，未引用網路圖片。",
+      "license": "本專案原創，供 Dental Education Studio 使用。",
+      "sha256": "35976e63fdc8a9c3f8f7b1dc344c6fda7d2b0835a2053838dd5fb7637c32cde0",
+      "review_status": "待醫師審核",
+      "reviewed_by": null,
+      "reviewed_on": null
+    }
   }
 ]

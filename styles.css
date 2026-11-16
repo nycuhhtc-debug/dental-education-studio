@@ -5,3 +5,11 @@
 /* 文章選填示意圖 */
 .article-figure{margin:24px 0}.article-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:16px}.article-figure figcaption{margin-top:8px;color:var(--muted);font-size:14px}
 .refs{overflow-wrap:anywhere}
+/* 封面與內文圖分開呈現；醫療示意圖不裁切。 */
+.article-cover{position:relative;aspect-ratio:8/5;background:var(--pale);border-radius:12px;overflow:hidden;margin-bottom:20px;display:grid;place-items:center}
+.article-cover img{display:block;width:100%;height:100%;object-fit:contain}
+.cover-placeholder{color:var(--sea);font-size:22px;font-weight:700}
+.article-figure{position:relative}
+.image-review{display:block;color:var(--ink);background:var(--pale);font-size:12px;padding:4px 8px}
+.article-cover .image-review{position:absolute;bottom:0;left:0;right:0;text-align:center}
+.image-unavailable{padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--pale);overflow-wrap:anywhere}

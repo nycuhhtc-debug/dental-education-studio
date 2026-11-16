@@ -19,7 +19,9 @@
 ├── styles.css              全站樣式（顏色變數集中在 :root）
 ├── script.js               讀取 JSON、渲染卡片、搜尋、類別篩選、文章視窗
 ├── articles/
-│   └── articles.json       所有文章資料（唯一內容來源）
+│   ├── articles.json       所有文章資料（唯一內容來源）
+│   ├── image-settings.json 統一封面與其審核紀錄
+│   └── images/             本地封面及衛教示意圖
 ├── tools/
 │   └── check_articles.py   文章格式檢查工具
 ├── AGENTS.md               本規則
@@ -30,12 +32,12 @@
 ### 修改範圍
 | 任務 | 可以改的檔案 | 不可以改的檔案 |
 |---|---|---|
-| 新增／修改文章 | `articles/articles.json` | 其他所有檔案 |
+| 新增／修改文章 | `articles/articles.json`；需附圖時可新增 `articles/images/` 檔案 | 其他所有檔案 |
 | 調整外觀 | `styles.css` | `articles.json` 的內容 |
 | 新增網站功能 | `script.js`、`index.html`、`styles.css` | 既有文章內容 |
 | 修改規則 | `AGENTS.md`（需使用者同意） | — |
 
-新增文章**只需要**動 `articles/articles.json`。若你覺得必須改程式才能新增文章，表示做法錯了，請先回報。
+新增純文字文章只需修改 `articles/articles.json`；新增配圖可另外加入 `articles/images/` 圖檔及圖片資料，不需要修改程式。缺少專屬封面時使用統一封面。若必須改程式才能新增文章，請先回報。
 
 ## 3. 文章資料格式
 `articles/articles.json` 是一個陣列，每篇文章是一個物件，欄位依此順序：
@@ -87,7 +89,7 @@
 - 不加入外部字型、圖庫、追蹤碼或廣告。
 
 ## 5. 醫療內容安全規則（不可違反）
-- 新文章一律 `review_status: "待醫師審核"`。**只有使用者明確說「我已審核」才能改成「醫師已審核」。**
+- 新文章一律 `review_status: "待醫師審核"`。**只有使用者明確確認該篇內容審核通過，才能改成「醫師已審核」；不能把功能實作確認視為內容核准。**
 - 不杜撰文獻、DOI、統計數據、作者或指引名稱。不確定就寫「待查證」。
 - 不放任何病人姓名、照片、影像或可識別個資。
 - 不刪除或改寫既有文章，除非使用者指定該篇文章。
@@ -106,4 +108,26 @@
 - `tools/check_articles.py` 全部通過。
 - 內容皆為繁體中文，手機可閱讀。
 - `AGENTS.md` 與網站原始碼都在同一 GitHub Repository。
-- 新增一篇文章只需修改 `articles/articles.json`。
+- 新增文字文章只需修改 `articles/articles.json`；配圖另加入本地圖檔，不需改程式。
+
+
+## 8. 圖片格式、授權與醫師審核
+
+- 文章與使用的圖片（含統一封面）都必須經醫師明確確認，才能發布。確認本次功能實作不代表核准任何文章或圖片。
+- 審核依對話的實際意思，不要求使用者重複特定口令；須記錄對應文章／圖片、醫師識別名稱與日期。不得自動把既有待審核資料改成通過。文章沿用 `review_status`；每張圖另有獨立的 `review_status`、`reviewed_by`、`reviewed_on`。
+- 所有新圖片預設「待醫師審核」。AI 生成圖片為草稿，需醫師檢查解剖位置、左右方向、文字、治療步驟及與文章的一致性。圖片、醫療圖說或替代文字改動後，須重新審核；同步更新檔案 sha256。
+- 優先使用醫師確認的原創／明確授權醫療插畫，不隨意下載網路圖片。每張圖必填 `source` 與 `license`，列明作者或機構、原始來源及可用範圍；外部授權須保存依據，不可因註明出處就視為可用。
+- 不得放入病人姓名、真實病人可識別影像或個資。插畫應清楚、平實，不誇大療效；不裁切關鍵醫療資訊。不加入外部字型、CDN 或遠端圖片。
+- `cover` 是選填的橫式封面物件；`images` 是選填內文圖陣列；舊 `image` 欄位已遷移。統一封面放在 `articles/image-settings.json` 的 `default_cover`，同樣須審核。
+- 圖片物件必填 `src`、`alt`、`width`、`height`、`source`、`license`、`sha256`、`review_status`；`caption` 為選填圖說。核准時另填 `reviewed_by`、`reviewed_on`（YYYY-MM-DD）。`alt` 用繁體中文說明必要資訊，不能只寫「圖片」。
+- 圖檔只允許 `articles/images/` 直屬目錄的英文小寫、數字與連字號檔名；格式 SVG、PNG、WebP、JPG/JPEG。SVG 不得包含腳本、事件、外嵌 HTML、動畫或外部引用。不得使用路徑跳脫或符號連結。
+- 首頁封面缺少、未核准或載入失敗時，使用核准的統一封面；若統一封面也不可用，以 CSS 文字底圖替代，不顯示破圖。未核准的內文圖只在本機審閱模式顯示；載入失敗顯示文字說明。
+- 本機審閱：`python3 -m http.server 8000`，網址加 `?review=1`，只有 localhost／127.0.0.1／IPv6 loopback 可啟用，並標示圖片待審核。此模式不繞過發布檢查。
+
+### 發布前檢查
+
+1. `python3 tools/check_articles.py`：驗證資料、圖檔、來源、雜湊與圖片欄位；允許草稿供審閱。
+2. `python3 tools/check_articles.py --publish`：文章、封面、所有內文圖及統一封面都須已審核，否則非零退出。
+3. `python3 tools/build_site.py --output _site`：只在發布檢查通過後產生網站產物；輸出目錄須未存在。
+4. GitHub Pages 必須改用 **GitHub Actions**，由 `.github/workflows/pages.yml` 建置、上傳及部署核准產物；不可沿用 main 根目錄直接發布，否則會繞過檢查。變更 Pages 設定與合併／發布須依當次使用者授權。
+5. 發布核准不以「前端隱藏草稿」取代；不得忽略檢查失敗、刪除審核欄位或為通過檢查虛構醫師核准。

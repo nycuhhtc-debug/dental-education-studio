@@ -2,11 +2,13 @@
 
 用法：python3 tools/check_articles.py
 """
+import argparse
 import json
 import re
 import sys
 from datetime import date
 from pathlib import Path
+from image_rules import check_image
 
 ROOT = Path(__file__).resolve().parent.parent
 FIELDS = ["id", "title", "category", "summary", "body", "references", "review_status", "updated"]
@@ -16,6 +18,9 @@ ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--publish", action="store_true", help="阻擋尚未核准的文章或圖片")
+    args = parser.parse_args()
     path = ROOT / "articles" / "articles.json"
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -28,8 +33,24 @@ def main() -> int:
         return 1
 
     errors, seen = [], set()
+    try:
+        settings = json.loads((ROOT / 'articles/image-settings.json').read_text(encoding='utf-8'))
+        errors.extend(check_image(settings.get('default_cover'), '統一預設封面', ROOT, args.publish))
+    except (OSError, ValueError, AttributeError):
+        errors.append('無法讀取有效的 articles/image-settings.json')
     for i, a in enumerate(data, 1):
         tag = f"第 {i} 篇（{a.get('id', '無 id')}）"
+        if args.publish and a.get('review_status') != '醫師已審核':
+            errors.append(f'{tag} 文章尚未經醫師審核，禁止發布')
+        if 'image' in a:
+            errors.append(f'{tag} 舊 image 欄位請遷移至 images 陣列')
+        if 'cover' in a:
+            errors.extend(check_image(a['cover'], f'{tag} 封面', ROOT, args.publish))
+        if not isinstance(a.get('images', []), list):
+            errors.append(f'{tag} images 必須是陣列')
+        else:
+            for index, image in enumerate(a.get('images', []), 1):
+                errors.extend(check_image(image, f'{tag} 示意圖 {index}', ROOT, args.publish))
         missing = [f for f in FIELDS if f not in a]
         if missing:
             errors.append(f"{tag} 缺少欄位：{', '.join(missing)}")

@@ -142,9 +142,20 @@
     ],
     "review_status": "待醫師審核",
     "updated": "2026-11-17",
-    "image": {
-      "src": "articles/images/imf-diet.svg",
-      "alt": "顎骨骨折飲食進階示意圖：先確認固定方式，由醫師評估骨折與癒合後選擇飲食質地。能張口、能吃軟食與能正常咀嚼不同，每一步皆須依醫囑，不能只看週數。"
-    }
+    "images": [
+      {
+        "src": "articles/images/imf-diet.svg",
+        "alt": "顎骨骨折飲食進階示意圖：先確認固定方式，由醫師評估骨折與癒合後選擇飲食質地。能張口、能吃軟食與能正常咀嚼不同，每一步皆須依醫囑，不能只看週數。",
+        "caption": "飲食進階示意圖｜每一步皆依醫師指示",
+        "width": 840,
+        "height": 1500,
+        "source": "本專案原創 SVG；依使用者核准的 IMF 衛教示意圖製作。",
+        "license": "專案原創，供 Dental Education Studio 使用。",
+        "review_status": "待醫師審核",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "sha256": "5419715715f8cad759449a21340f778d122c29bf3ab300dc1356e89eef0bc949"
+      }
+    ]
   }
 ]

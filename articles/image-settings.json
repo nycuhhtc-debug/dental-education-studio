@@ -1,0 +1,15 @@
+{
+  "default_cover": {
+    "src": "articles/images/default-cover.svg",
+    "alt": "牙科衛教統一封面：牙齒與衛教手冊圖示。",
+    "caption": "牙科衛教",
+    "width": 960,
+    "height": 600,
+    "source": "本專案原創 SVG；非引用網路圖片，不含治療步驟。",
+    "license": "專案原創，供 Dental Education Studio 使用。",
+    "review_status": "醫師已審核",
+    "reviewed_on": "2026-11-17",
+    "reviewed_by": "專案負責人（本次 Codex 對話確認）",
+    "sha256": "db2028d232204e4dd81bc522885244961d52b8c1552e6de1e88d16bfda4a26f5"
+  }
+}

@@ -99,7 +99,7 @@
     "references": [
       "醫學參考資料待醫師補充與查證"
     ],
-    "review_status": "待醫師審核",
+    "review_status": "醫師已審核",
     "updated": "2026-11-17"
   },
   {
@@ -119,7 +119,7 @@
       "Elad S, et al. MASCC/ISOO clinical practice guidelines for the management of mucositis secondary to cancer therapy. Cancer. 2020.（適用條件及最新版本待醫師核對）",
       "其他牙科用途的系統性回顧與最新醫學參考資料待醫師補充與查證"
     ],
-    "review_status": "待醫師審核",
+    "review_status": "醫師已審核",
     "updated": "2026-11-17"
   },
   {
@@ -140,11 +140,22 @@
       "AO Foundation. AO Surgery Reference: Closed treatment, MMF — condylar process and head, simple and complex. https://surgeryreference.aofoundation.org/cmf/trauma/mandible/condylar-process-and-head-simple-and-complex/closed-treatment-mmf （年份及原文待查證；供核對髁突區閉鎖與功能性治療）",
       "醫學參考資料待醫師補充與查證：以上來源尚未完成原文核查；第 2、4、6、8 週非 AO 統一療程。固定式 IMF 出院緊急照護仍需補充醫院衛教來源。"
     ],
-    "review_status": "待醫師審核",
+    "review_status": "醫師已審核",
     "updated": "2026-11-17",
-    "image": {
-      "src": "articles/images/imf-diet.svg",
-      "alt": "顎骨骨折飲食進階示意圖：先確認固定方式，由醫師評估骨折與癒合後選擇飲食質地。能張口、能吃軟食與能正常咀嚼不同，每一步皆須依醫囑，不能只看週數。"
-    }
+    "images": [
+      {
+        "src": "articles/images/imf-diet.svg",
+        "alt": "顎骨骨折飲食進階示意圖：先確認固定方式，由醫師評估骨折與癒合後選擇飲食質地。能張口、能吃軟食與能正常咀嚼不同，每一步皆須依醫囑，不能只看週數。",
+        "caption": "飲食進階示意圖｜每一步皆依醫師指示",
+        "width": 840,
+        "height": 1500,
+        "source": "本專案原創 SVG；依使用者核准的 IMF 衛教示意圖製作。",
+        "license": "專案原創，供 Dental Education Studio 使用。",
+        "review_status": "醫師已審核",
+        "reviewed_on": "2026-11-17",
+        "reviewed_by": "專案負責人（本次 Codex 對話）",
+        "sha256": "bc00c2e8dad47529e9b0167d24a1990f042cc185aa2f5e42846ee4773ca2279d"
+      }
+    ]
   }
 ]

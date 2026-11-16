@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="1500" viewBox="0 0 840 1500" role="img" aria-labelledby="title desc">
 <title id="title">顎骨骨折後，飲食如何進階？</title>
-<desc id="desc">待醫師審核的衛教示意圖。固定式顎間固定、橡皮筋及拆除固定，不代表特定飲食階段；飲食須由醫師依骨折類型、固定穩定性、咬合與癒合評估。能張口、能吃軟食與能正常咀嚼並不相同。</desc>
+<desc id="desc">衛教示意圖。固定式顎間固定、橡皮筋及拆除固定，不代表特定飲食階段；飲食須由醫師依骨折類型、固定穩定性、咬合與癒合評估。能張口、能吃軟食與能正常咀嚼並不相同。</desc>
 <defs><style>text{font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif;fill:#17354a}.h{font-size:30px;font-weight:700}.body{font-size:26px}.small{font-size:23px;fill:#607786}.sea{fill:#0b8f93}.label{font-size:25px;font-weight:700}</style></defs>
 <rect width="840" height="1500" fill="#f8fbfa"/>
 <rect x="40" y="36" width="170" height="42" rx="21" fill="#e9f6f3"/>
-<text x="125" y="65" text-anchor="middle" font-size="23" class="sea">待醫師審核</text>
+<text x="125" y="65" text-anchor="middle" font-size="23" class="sea">衛教示意圖</text>
 <text x="40" y="132" font-size="38" font-weight="700">顎骨骨折後，飲食如何進階？</text>
 <text x="40" y="178" class="body" fill="#607786">看固定與癒合情況，不只看術後週數。</text>
 <rect x="40" y="213" width="760" height="126" rx="16" fill="#e9f6f3"/>
@@ -37,5 +37,5 @@
 <text x="66" y="1340" class="label">軟，不代表可以咬。</text>
 <text x="66" y="1378" class="small">粥、麵、碎肉仍需看顆粒、質地及允許的咀嚼程度。</text>
 <text x="66" y="1412" class="small">不要自行試咬硬物或搖動下顎測試癒合。</text>
-<text x="420" y="1470" text-anchor="middle" font-size="22" fill="#607786">衛教草稿｜不能取代治療團隊的個別指示</text>
+<text x="420" y="1470" text-anchor="middle" font-size="22" fill="#607786">衛教示意圖｜不能取代治療團隊的個別指示</text>
 </svg>

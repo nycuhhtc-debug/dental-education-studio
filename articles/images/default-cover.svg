@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+<title id="title">牙科衛教統一封面</title><desc id="desc">青綠色背景，搭配抽象牙齒與衛教手冊圖示。此圖為裝飾性示意，不代表診斷或治療步驟。</desc>
+<rect width="960" height="600" fill="#e9f6f3"/><circle cx="210" cy="180" r="140" fill="#f8fbfa"/><circle cx="790" cy="470" r="190" fill="#f8fbfa"/>
+<g fill="none" stroke="#0b8f93" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+<path d="M290 160c-45-25-100 7-94 65 4 47 25 66 30 117 4 42 12 74 30 74 26 0 16-96 45-96s19 96 45 96c18 0 26-32 30-74 5-51 26-70 30-117 6-58-49-90-94-65-8 4-14 4-22 0z"/>
+<path d="M500 193q83-24 140 12 57-36 140-12v202q-83-24-140 12-57-36-140-12zM640 205v202"/>
+<path d="M533 250h65m-65 45h65m-65 45h48m95-90h65m-65 45h65m-65 45h48" stroke-width="8"/>
+</g><text x="480" y="505" text-anchor="middle" font-family="system-ui,sans-serif" font-size="35" font-weight="700" fill="#17354a">Dental Education Studio</text>
+</svg>

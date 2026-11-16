@@ -19,7 +19,7 @@ python3 -m http.server 8000         # 開啟 http://localhost:8000
 
 每篇文章可有獨立 `cover` 及 `images` 陣列。專屬封面缺少、未核准或載入失敗時使用統一封面；預設封面也不可用時顯示 CSS 文字底圖。正式顯示只採用已核准圖片。內文圖完整縮放，不裁切；載入失敗以替代文字說明。
 
-以 `python3 -m http.server 8000` 啟動後，在本機網址加入 `?review=1` 可查看有清楚待審核標記的圖片草稿。此開關限 loopback 主機，不能用於對外發布。新統一封面及 IMF 圖片的審核狀態未在本次功能遷移中自動提升。
+以 `python3 -m http.server 8000` 啟動後，在本機網址加入 `?review=1` 可查看有清楚待審核標記的圖片草稿。此開關限 loopback 主機，不能用於對外發布。統一封面及 IMF 圖片已依 Codex 對話的明確確認記錄審核；其餘圖片仍須逐張確認。
 
 圖片資料範例（核准前 reviewed_by、reviewed_on 為 null）：
 

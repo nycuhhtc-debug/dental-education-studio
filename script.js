@@ -41,6 +41,8 @@ function openArticle(id) {
     `<span class="${statusClass}">${escapeHtml(a.review_status)}</span>` +
     (a.updated ? `<span class="updated">更新：${escapeHtml(a.updated)}</span>` : '') +
     a.body.map(p => `<p>${escapeHtml(p)}</p>`).join('') +
+    (a.image && typeof a.image.src === 'string' && /^articles\/images\/[a-z0-9-]+\.svg$/.test(a.image.src) && typeof a.image.alt === 'string'
+      ? `<figure class="article-figure"><img src="${escapeHtml(a.image.src)}" alt="${escapeHtml(a.image.alt)}" width="840" height="1500" /><figcaption>飲食進階示意圖｜每一步皆依醫師指示</figcaption></figure>` : '') +
     `<div class="refs"><strong>參考資料</strong><ul>${a.references.map(r => `<li>${escapeHtml(r)}</li>`).join('')}</ul></div>`;
   if (!dialog.open) dialog.showModal();
   if (location.hash !== '#' + id) history.replaceState(null, '', '#' + id);

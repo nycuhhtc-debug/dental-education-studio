@@ -41,20 +41,18 @@ python3 -m http.server 8000         # 開啟 http://localhost:8000
 
 圖檔存放於 `articles/images/`，統一封面設定在 `articles/image-settings.json`。審核須同時確認圖片、替代文字與圖說；修改後重新審核。圖片來源與授權不得留空，不使用任意網路圖片或外部 CDN。
 
-## GitHub Pages 部署（需審核）
+## GitHub Pages 部署
 
-目前線上站台仍是從 main 根目錄直接發布。**合併本功能前**，先將 Repository → Settings → Pages → Build and deployment → Source 改為 **GitHub Actions**；否則舊的分支發布會繞過新檢查。這個 PR 不會自動修改線上設定或發布。
-
-`.github/workflows/pages.yml` 在 PR 執行格式與測試，在 main 執行審核檢查後才建置和部署。未核准的文章、圖片或預設封面會阻擋產物，不上傳或部署；既有站台不因失敗而被新內容覆蓋。啟用前需核對每篇的實際核准紀錄，不能批次假定通過。
+沿用 Repository → Settings → Pages → Build and deployment → **Deploy from a branch → main → /(root)**。合併到 main 後由既有 GitHub Pages 流程更新網站，不需改為 GitHub Actions，也不需另行建置。
 
 ```bash
 python3 tools/check_articles.py
 python3 -m unittest discover -s tools -p 'test_*.py'
-python3 tools/check_articles.py --publish
-python3 tools/build_site.py --output _site
 ```
 
-`_site` 須是不存在的目錄；發布檢查不通過時不產生目錄。產物只包含網站必要檔案及資料實際引用的已核准圖片，不包含未引用的圖稿、規則或測試。不要再手動部署儲存庫根目錄。
+`.github/workflows/checks.yml` 僅執行格式與測試，不負責發布。審核狀態供醫師確認，不是整站發布的強制檢查；待審核文章保持原標示，不自動認定通過。未核准專屬圖片不對外顯示，改用已核准的預設封面；未核准的內文圖僅供本機審閱。若預設封面也無法使用，以 CSS 文字底圖替代。
+
+合併與發布依當次使用者授權進行，並在 Actions 查看 pages build and deployment 的結果。
 
 ## 重複使用驗收
 交辦給 AI 的指令：

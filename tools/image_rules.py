@@ -1,4 +1,4 @@
-"""Local image schema, attribution and publication checks (standard library only)."""
+"""Local image schema, attribution and asset checks (standard library only)."""
 import hashlib
 import re
 import xml.etree.ElementTree as ET
@@ -8,7 +8,7 @@ IMAGE_PATH = re.compile(r'^articles/images/[a-z0-9-]+\.(svg|png|webp|jpg|jpeg)$'
 STATUSES = {'待醫師審核', '醫師已審核'}
 
 
-def check_image(image, tag, root, publish=False):
+def check_image(image, tag, root):
     errors = []
     if not isinstance(image, dict):
         return [f'{tag} 必須是圖片物件']
@@ -23,8 +23,6 @@ def check_image(image, tag, root, publish=False):
     status = image.get('review_status')
     if status not in STATUSES:
         errors.append(f'{tag} 缺少有效的圖片審核狀態')
-    if publish and status != '醫師已審核':
-        errors.append(f'{tag} 圖片尚未經醫師審核，禁止發布')
     if status == '醫師已審核':
         try:
             date.fromisoformat(image.get('reviewed_on', ''))
